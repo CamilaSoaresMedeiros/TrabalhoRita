@@ -426,3 +426,15 @@ h3{
 button{
     color: white;
 }
+
+
+.descricao a{
+    color: rgb(50, 50, 50);
+}
+
+.descricao{
+    display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+            width: 100%;
+}

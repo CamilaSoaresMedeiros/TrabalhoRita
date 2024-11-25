@@ -1,134 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="header_footer.css">
-    <style>
-
-body{
-            background-color:#152f30 ;
-        }
-        
-        #aprese{
-    background-image: url("https://www.principiosustentavel.com.br/wp-content/uploads/sites/390/2023/05/objetivos-de-desenvolvimento-sustentavel-natureza-morta.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-        }
-
-        #aprese::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(89, 89, 89, 0.5);
-            z-index: 1;
-        }
+    <link rel="stylesheet" href="blog.css">
 
 
-        #aprese h1{
-            font-weight: 300;
-            font-size: 60px;
-            color: white;
-            z-index: 2;
-        }
 
-        #center{
-            display: flex;
-            justify-content: center;
-            height: 60vh;
-            align-items: center;
-        }
-
-        #artigos{
-            display: flex;
-            flex-direction: column;
-            background-color: #cfdbdc;
-            width: 1200px;
-            max-height: 600px;
-            overflow-y: auto;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .artigo{
-            display: flex;
-            background-color: white;
-            gap: 10px;
-            margin: 10px;
-            padding: 20px 10px;
-            align-items: center;
-            border-radius: 8px;
-        }
-
-        .artigo h2{
-            font-weight: 300;
-            font-size: 20px;
-        }
-
-        .artigo p{
-            font-weight: 300;
-            font-size: 12px;
-            border-bottom: 1px solid #211f1f;
-        }
-
-        .artigo a{
-            text-decoration: none;
-            color: #3b82f6;
-            font-size: 16px;
-        }
-
-        .artigo a:hover{
-            text-decoration: underline;
-        }
-
-        .texto{
-            font-size: 14px;
-            flex: 60%;
-            text-align: justify;
-        }
-
-        .descricao{
-            flex: 20%;
-        }
-
-        .img{
-            width: 300px;
-            flex: 20%;
-        }
-
-        .img img{
-            width: 100%;
-            border-radius: 8px;
-        }
-    </style>
 </head>
+
 <body>
-    <div class="caixa">
+    <div class="main">
+
         <!-- Navbar -->
         <div class="navbar">
             <a href="#" class="logo">Bluegreen Eco</a>
             <div class="nav-links">
-                <span class="item">Home</span>
-                <span id="scroll" class="item">Produtos</span>
-                <span id="scroll" class="item">Sobre</span>
-                <span id="scroll" class="item"><img src="" alt=""></span>
+                <a href="index.html"><span class="item">Home</span></a>
+                <a href="products.html"><span id="scroll" class="item">Produtos</span></a>
+                <a href="about.html"><span id="scroll" class="item">Sobre</span></a>
             </div>
             <div class="nav-buttons" id="navMenu">
-                <a href="login.html"><button class="nav-btn selected" >LOGIN</button></a>
-                <button class="nav-btn">CADASTRE-SE</button>
+                <a href="pfpj.html"><button class="nav-btn selected">LOGIN</button></a>
             </div>
+
+            <button class="toggler">
+                <i class='bx bx-menu'></i>
+            </button>
         </div>
-    </div>
+
 
         <div id="aprese">
             <h1>Artigos</h1>
@@ -136,84 +38,114 @@ body{
         <div id="center">
             <div id="artigos">
                 <div class="artigo">
-                    <div class="img"><img src="https://www.enelgreenpower.com/content/dam/enel-egp/immagini/learning-hub/sviluppo-sostenibile/economia-circolare/Article-Media-economia-circolare.jpg" alt=""></div>
+                    <div class="img"><img
+                            src="https://www.enelgreenpower.com/content/dam/enel-egp/immagini/learning-hub/sviluppo-sostenibile/economia-circolare/Article-Media-economia-circolare.jpg"
+                            alt=""></div>
                     <div class="descricao">
                         <h2>Economia circular</h2>
                         <p>04/11/2024</p>
                         <a href="blog_post.html">Leia mais</a>
                     </div>
                     <div class="texto">
-                        A economia circular consiste em produzir os produtos e serviços de que precisamos para nossas vidas de uma forma que altere os ciclos naturais o mínimo possível. Isso envolve primeiramente a redução da mineração, o aumento da vida útil dos produtos e, no final de sua vida útil, a reutilização e a reciclagem de matérias-primas.
+                        A economia circular consiste em produzir os produtos e serviços de que precisamos para nossas
+                        vidas de uma forma que altere os ciclos naturais o mínimo possível. Isso envolve primeiramente a
+                        redução da mineração, o aumento da vida útil dos produtos e, no final de sua vida útil, a
+                        reutilização e a reciclagem de matérias-primas.
                     </div>
                 </div>
                 <div class="artigo">
-                    <div class="img"><img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/sustentabilidade.jpg" alt=""></div>
+                    <div class="img"><img
+                            src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/sustentabilidade.jpg"
+                            alt=""></div>
                     <div class="descricao">
                         <h2>Sustentabilidade</h2>
                         <p>20/11/2024</p>
                         <a href="blog_post1.html">Leia mais</a>
                     </div>
                     <div class="texto">
-                        Sustentabilidade é a busca pelo equilíbrio entre o suprimento das necessidades humanas e preservação dos recursos naturais, não comprometendo as próximas gerações. <!-- https://brasilescola.uol.com.br/educacao/sustentabilidade.htm -->
+                        Sustentabilidade é a busca pelo equilíbrio entre o suprimento das necessidades humanas e
+                        preservação dos recursos naturais, não comprometendo as próximas gerações.
+                        <!-- https://brasilescola.uol.com.br/educacao/sustentabilidade.htm -->
                     </div>
                 </div>
                 <div class="artigo">
-                    <div class="img"><img src="https://www.piramidal.com.br/blog/wp-content/uploads/2020/01/shutterstock_406326613.jpg" alt=""></div>
+                    <div class="img"><img
+                            src="https://www.piramidal.com.br/blog/wp-content/uploads/2020/01/shutterstock_406326613.jpg"
+                            alt=""></div>
                     <div class="descricao">
                         <h2>Reduzir, reutilizar e reciclar</h2>
                         <p>20/12/2024</p>
                         <a href="blog_post2.html">Leia mais</a>
                     </div>
                     <div class="texto">
-                        Muito conhecidos como ações fundamentais de preservação do meio ambiente, os 3 R’s da Sustentabilidade (Reduzir, Reutilizar e Reciclar) são um conjunto de práticas cujo objetivo é minimizar o impacto ambiental causado pelo desperdício de materiais e produtos provenientes de recursos naturais, além de poupar a natureza da extração inesgotável de recursos. <!-- https://www.piramidal.com.br/blog/3-rs-da-sustentabilidade/ -->
-                </div>
+                        Muito conhecidos como ações fundamentais de preservação do meio ambiente, os 3 R’s da
+                        Sustentabilidade (Reduzir, Reutilizar e Reciclar) são um conjunto de práticas cujo objetivo é
+                        minimizar o impacto ambiental causado pelo desperdício de materiais e produtos provenientes de
+                        recursos naturais, além de poupar a natureza da extração inesgotável de recursos.
+                        <!-- https://www.piramidal.com.br/blog/3-rs-da-sustentabilidade/ -->
+                    </div>
                 </div>
                 <div class="artigo">
-                    <div class="img"><img src="https://s4.static.brasilescola.uol.com.br/be/2024/05/1-termometro-com-temperatura-elevada-apontado-para-o-sol-ao-lado-de-representacao-da-terra-uma-alusao-ao-aquecimento-global.jpg" alt=""></div>
+                    <div class="img"><img
+                            src="https://s4.static.brasilescola.uol.com.br/be/2024/05/1-termometro-com-temperatura-elevada-apontado-para-o-sol-ao-lado-de-representacao-da-terra-uma-alusao-ao-aquecimento-global.jpg"
+                            alt=""></div>
                     <div class="descricao">
                         <h2>Aquecimento global</h2>
                         <p>30/12/2024</p>
                         <a href="blog_post3.html">Leia mais</a>
                     </div>
                     <div class="texto">
-                        O aquecimento global é um grave problema ambiental, ocasionado pela intensa emissão de gases poluentes na atmosfera provocada pela ação humana, resultando nas mudanças climáticas. <!--https://brasilescola.uol.com.br/geografia/aquecimento-global.htm -->
-                </div>
+                        O aquecimento global é um grave problema ambiental, ocasionado pela intensa emissão de gases
+                        poluentes na atmosfera provocada pela ação humana, resultando nas mudanças climáticas.
+                        <!--https://brasilescola.uol.com.br/geografia/aquecimento-global.htm -->
+                    </div>
                 </div>
             </div>
         </div>
 
 
-          <!-- Footer -->
-     <div class="footer caixa">
-        <div class="footer-header">
-            Lorem ipsum dolor sit amet, consectetur
-        </div>
-        <div class="footer-links">
-            <div class="link">
-                <h5>Marketplace</h5>
-                <p>Home</p>
-                <p>Blog</p>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-header">
+                Faça do Meio Ambiente o seu Meio de Vida
             </div>
-            <div class="link">
-                <h5>Empresa</h5>
-                <p>Sobre</p>
-                <p>Serviços</p>
-                <p>Time</p>
-            </div>
-            <div class="link">
-                <h5>Contact</h5>
-                <p>Github</p>
-                <p>Instagram</p>
-                <p>Twitter</p>
-                <p>Facebook</p>
+            <div class="footer-links">
+                <div class="link">
+                    <h5>Loja</h5>
+                    <a href="index.html">
+                        <p>Home</p>
+                    </a>
+                    <a href="products.html">
+                        <p>Produtos</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <h5>Companhia</h5>
+                    <a href="about.html">
+                        <p>Sobre o projeto</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <h5>Contatos</h5>
+                    <a href="">
+                        <p>Número</p>
+                    </a>
+                    <a href="">
+                        <p>Email</p>
+                    </a>
+                </div>
+
             </div>
 
+        </div>
+        <!-- End of Footer -->
+        <div class="copyright">
+            <p>Copyright 2024, Bluegreen Eco.</p>
         </div>
 
     </div>
-    <div class="copyright caixa">
-        <p>Copyright 2024, Bluegreen Eco.</p>
-    </div>
 
+    </div>
 </body>
+
 </html>

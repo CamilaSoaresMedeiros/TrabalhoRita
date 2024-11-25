@@ -34,6 +34,10 @@ body{
     background-color: #252954;
 }
 
+.car{
+    font-size: 25px;
+}
+
 .main{
     padding: 0 88px;
     position: relative;
