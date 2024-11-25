@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="header_footer.css">
+    <title>Pagamento</title>
+    <style>
+
+.container::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0%;
+    top:90%;
+    background-color: #22a8cd;
+    filter: blur(130px);
+    z-index: -1;
+}
+    
+        .container{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 100vh;
+    padding: 0 88px;
+    flex-wrap: wrap;
+}
+
+.parte1{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h2,h3{
+    font-weight: 300;
+    margin: 80px 0px;
+    margin-top: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+label{
+    font-size: 18px;
+}
+
+.menor{
+    font-size: 15px;
+}
+
+.espaco{
+    margin-bottom: 70px;
+}
+
+.data{
+    border-top: 1px solid rgb(193, 193, 193);
+}
+
+.caixa_botao{
+    display: flex;
+    justify-content: end;
+}
+
+.botao{
+    background-color: #05de3f;
+    border: none;
+    padding: 10px 20px;
+    width: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao:hover{
+    background-color: #05b534;
+    color: white;
+}
+
+.resdacompra{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 40px;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.prodrc, .pagararc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodrc{
+    padding-bottom: 20px;
+}
+
+.pagararc{
+    border-top: 1px solid rgb(173, 173, 173);
+    padding-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html" class="logo">Bluegreen Eco</a>
+        </div>
+    </div>
+
+
+        <div class="container ">
+            <div class="parte1 ">
+                <h2>Escolha o endereço de entrega</h2>
+                    <div class="endereco efeito">
+                        <form action="" required>
+                            <label for="address"><input  type="radio"     id="address" required> Enviar no meu endereço</label>
+                            <p class="menor">R$ 10,00</p>
+                        </form>
+                        <p class="menor espaco">Travessa Júlio Verne, 58 - Rio de Janeiro
+                            Residencial</p>
+                            <p class="data">Terça feira - 20 de novembro </p>
+                    </div>
+                    <div class="caixa_botao"><button class="botao"  onclick="window.location.href='pagamento2.html'" >CONTINUAR</button></div>
+            </div>
+            <div class="resdacompra efeito">
+                <h3>Resumo da compra</h3>
+                <div class="prodrc">
+                    <p>Produto</p>
+                    <p>R$59,75</p>
+                </div>
+                <div class="pagararc">
+                    <p>Você pagará</p>
+                    <p>R$59,75</p>
+                </div>
+            </div>
+        </div>
+
+
+     <!-- Footer -->
+     <div class="footer caixa">
+        <div class="footer-header">
+            Faça do Meio Ambiente o seu Meio de Vida
+        </div>
+        <div class="footer-links">
+            <div class="link">
+                <h5>Loja</h5>
+                <a href="index.html"><p>Home</p></a>
+                <a href="products.html"><p>Produtos</p></a>
+            </div>
+            <div class="link">
+               <h5>Companhia</h5>
+                <a href="about.html"><p>Sobre</p></a>
+            </div>
+            <div class="link">
+                <h5>Contato</h5>
+                <a href="contato.html"><p>Fomulário</p></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright caixa">
+        <p>Copyright 2024, Bluegreen Eco.</p>
+    </div>
+</body>
+</html>

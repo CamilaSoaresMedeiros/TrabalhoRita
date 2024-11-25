@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="header_footer.css">
+    <title>Contato</title>
+    <style>
+
+        body::-webkit-scrollbar {
+                    display: none;
+                }
+
+        #form::before{
+            content: "";
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            left: 90%;
+            top: 100%;
+            background-color: #05de3f;
+            filter: blur(150px);
+        }
+
+        #form::after{
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 0%;
+            top: 30%;
+            background-color: #22a8cd;
+            filter: blur(150px);
+        }
+
+        #form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 60px 0px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 750px;
+            border: 3px solid white;
+            padding: 30px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        h1{
+            margin-bottom: 30px;
+            font-weight: 300;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .text{
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text p{
+            margin-bottom: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        label{
+            margin: 30px 0px 10px 0px;
+        }
+
+        input[type="text"], input[type="number"], input[type="submit"]{
+            height: 40px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 3px solid #05de3f;
+        }
+
+        select{
+            height: 40px;
+            border: 3px solid #05de3f;
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        input[type="submit"]{
+            width: 750px;
+            margin-top: 30px;
+            background: linear-gradient(95deg,  #05de3f 3.2%, #3b82f6 99.5%);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+            color: white;
+        }
+
+            input[type="submit"]:hover{
+                outline: 3px solid #3b82f6;
+            box-shadow: 0px 0px 15px #3b82f6;
+            border: none;
+            }
+
+        textarea{
+            padding: 12px;
+            resize: none;
+            border: 3px solid #05de3f;
+            border-radius: 10px;
+        }
+
+        form p{
+            border-top: 2px solid #05de3f;
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        form p:nth-child(1){
+            margin-top: 10px;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus, input[type="submit"]:focus{
+            outline: 3px solid #3b82f6;
+            box-shadow: 0px 0px 15px #3b82f6;
+            border: none;
+        }
+
+        textarea:focus{
+            outline: 3px solid #3b82f6;
+            box-shadow: 0px 0px 15px #3b82f6;
+            border: none;
+        }
+
+        select:focus{
+            outline: 3px solid #3b82f6;
+            box-shadow: 0px 0px 15px #3b82f6;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html" class="logo">Bluegreen Eco</a>
+        </div>
+    </div>
+
+
+    <div id="form" class="slide-in-fwd-center">
+        <div class="text">
+            <h1>Entre em contato com a gente!</h1>
+            <p>A partir desse formulário, tire dúvidas, dê sugestões e reclamações:</p>
+        </div>
+        <div>
+            <form action="">
+                <label for="nomee">Nome:</label>
+                <input type="text" name="nome" id="nomee">
+                <label for="mail">E-mail:</label>
+                <input type="text" name="nome" id="mail">
+                <label for="desc">Digite:</label>
+                <textarea id="desc" id="descr" placeholder="Digite aqui" rows="10" ></textarea>
+            </div>
+        <div>
+           <input type="submit" name="" id="" value="ENVIAR">
+        </div>
+    </form>
+    </div>
+
+        
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="perfil_clientEmpresa.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <title>Materiais - Bluegreen Eco</title>
+    <style>
+        body{
+            margin: 0px 88px;
+        }
+
+        .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+    z-index: 1000;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+.products-section h1 {
+    font-size: 30px;
+    color: #fff;
+}
+.products-section p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.add-to-cart {
+    background: linear-gradient(95deg,  #05de3f 3.2%, #3b82f6 99.5%);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Customer Reviews */
+.reviews-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.review {
+    background: #fff;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.products-section .info-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html" class="logo">Bluegreen Eco</a>
+            <div class="nav-links">
+                <a href="index.html"><span class="item">Home</span></a>
+                <a href="vendass.html"><span id="scroll" class="item">Venda</span></a>
+                <a href=""><span id="scroll" class="item selected">Materiais recicláveis</span></a>
+                <a href="about.html"><span id="scroll" class="item">Sobre</span></a>
+            </div>
+            <div class="nav-buttons" id="navMenu">
+                <a href="pagina_perfilEmpresa.html"><i class="fa-solid fa-circle-user sizeee sele"></i></a>
+            </div>
+        </div>
+        </div>
+        <!-- End of Navbar -->
+
+        <!-- Products Section -->
+        <div class="products-section">
+            <h1 class="header">Materiais recicláveis</h1>
+            <p class="info-text">Explore a nossa coleção de materiais recicláveis para um futuro melhor.</p>
+            <div class="product-grid">
+                <!-- Product Item 1 -->
+                <div class="product-item">
+                    <img src="sobras_mdf.webp" alt="Product 1" />
+                    <h3>1000kg de sobra de madeira</h3>
+                    <h4 class="product-description">Um material sustentável, versátil e econômico que pode ser a solução perfeita para sua empresa.</h4>
+                    <span class="product-price">R$ 1.200,00</span>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                </div>
+
+                <!-- Product Item 2 -->
+                <div class="product-item">
+                    <img src="papela.webp" alt="Product 2" />
+                    <h3>500kg papelão</h3>
+                    <h4 class="product-description"> Um material versátil, sustentável e com excelente custo-benefício para sua empresa. </h4>
+                    <span class="product-price">R$ 350,00</span>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                </div>
+
+                <!-- Product Item 3 -->
+                <div class="product-item">
+                    <img src="garrafa_pet.webp" alt="Product 3" />
+                    <h3>500kg garrafa PET</h3>
+                    <h4 class="product-description">Um material que combina sustentabilidade, versatilidade e economia.</h4>
+                    <span class="product-price">R$ 700,00</span>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                </div>
+
+                <!-- Product Item 4 -->
+                <div class="product-item">
+                    <img src="latinha.webp" alt="Product 4" />
+                    <h3>1000kg de latinhas prensadas</h3>
+                    <h4 class="product-description">Sustentáveis, versáteis e de alto valor no mercado, elas são ideais para quem busca reduzir custos e ajudar o meio ambiente.</h4>
+                    <span class="product-price"> R$ 5.000,00</span>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                </div>
+                <div class="product-item">
+                    <img src="retalhos_pano.webp" alt="Product 5" />
+                    <h3>Retalhos de algodão puro (100 kg)</h3>
+                    <h4 class="product-description">Além de reduzirem o desperdício, oferecem versatilidade e economia em diversos segmentos.</h4>
+                    <span class="product-price"> R$ 1.200,00 </span>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                </div>
+                    <div class="product-item">
+                    <img src="vidro_laminado.webp" alt="Product 6" />
+                    <h3>Vidro laminado reciclado em chapas (10 mm de espessura)</h3>
+                    <h4 class="product-description">Um material sustentável e de alto desempenho, ideal para empresas que buscam qualidade, segurança e economia.</h4>
+                    <span class="product-price"> R$ 180,00/m² </span>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="residuos_eletroeletronicos.webp" alt="Product 7" />
+                        <h3>1000kg sucata eletrônica mista </h3>
+                        <h4 class="product-description">Uma solução sustentável para empresas que buscam aproveitar o valor dos materiais descartados, reduzir o impacto ambiental e transformar lixo eletrônico em oportunidade.</h4>
+                        <span class="product-price">  R$ 2.000,00 </span>
+                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="borracha.webp" alt="Product 7" />
+                        <h3>1000kg borracha triturada fina (granulometria < 1 mm)</h3>
+                        <h4 class="product-description">Um material versátil, sustentável e de excelente custo-benefício</h4>
+                        <span class="product-price">   R$ 1.200,00 </span>
+                        <button class="add-to-cart">Adicionar ao carrinho</button>
+                    </div>
+            </div>
+        </div>
+        <!-- End of Products Section -->
+
+        <!-- Customer Reviews -->
+        <div class="reviews-section">
+            <h2>Avaliações de alguns clientes</h2>
+            <div class="review">
+                <p>"Produto incrível! Super Recomendo." - Mateus Vital</p>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="review">
+                <p>"Boa qualidade e entrega rápida." - Fágner Lemos</p>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
+        <!-- End of Customer Reviews -->
+
+      <!-- Footer -->
+      <div class="footer caixa">
+        <div class="footer-header">
+            Faça do Meio Ambiente o seu Meio de Vida
+        </div>
+        <div class="footer-links">
+            <div class="link">
+                <h5>Loja</h5>
+                <a href="index.html"><p>Home</p></a>
+                <a href="products.html"><p>Produtos</p></a>
+            </div>
+            <div class="link">
+               <h5>Companhia</h5>
+                <a href="about.html"><p>Sobre</p></a>
+            </div>
+            <div class="link">
+                <h5>Contato</h5>
+                <a href="contato.html"><p>Fomulário</p></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright caixa">
+        <p>Copyright 2024, Bluegreen Eco.</p>
+    </div>
+    
+                    
+    </div>            
+     <script src="script.js"></script>
+ </body> 

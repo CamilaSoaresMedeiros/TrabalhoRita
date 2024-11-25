@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <style>
+        .content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 88px;
+    gap: 70px
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 70%;
+    top:80%;
+    background-color: #05de3f;
+    filter: blur(90px);
+    z-index: -1;
+}
+
+.visual{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.visual p{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.imagem_texto{
+    border-right: 1px solid rgb(226, 226, 226);
+    width: 700px;
+}
+
+
+.imagem_texto p{
+    font-size: 14px;
+}
+
+h1{
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.imagem{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img{
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.536);
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 18px;
+}
+
+
+.texto h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.caixa_botao{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.botao{
+    background-color: #05de3f;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 80%;
+    transition: 0.2s;
+}
+
+.botao:hover{
+    background-color: #05b534;
+    color: white;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+table, .notas{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.385), -1px -1px 2px rgba(0, 0, 0, 0.385);
+}
+
+
+th{
+    background-color: #3b82f6;
+    font-weight: 400;
+}
+
+tr:last-child{
+    height: 100px;
+}
+
+td{
+    max-width: 300px;
+    background-color: white;
+    padding: 10px;
+}
+
+td ul{
+    list-style-position: inside;
+}
+
+.notas{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px 150px;
+}
+
+.ava{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.classif, .coment, .parte2, .notes, .pessoa{
+    display: flex;
+    flex-direction: column;
+}
+
+.classif, .coment{
+    gap: 10px;
+    font-size: 20px;
+}
+
+.coment, .classif{
+    width: 500px;
+}
+
+.parte1, .coment > p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+    padding: 20px 10px;
+}
+
+h4{
+    font-weight: 500;
+}
+
+.parte2{
+    gap: 20px;
+}
+
+.notes{
+    gap: 10px;
+}
+
+.barra {
+    width: 100%;
+    width: 200px;
+    background-color: #b4abab;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+
+.preenchimento_barra {
+    height: 15px;
+    background-color: #4CAF50;
+    padding-right: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.linha{
+    display: flex;
+    gap: 20px;
+
+}
+
+.stars{
+    font-size: 1.1rem; /* Tamanho das estrelas */
+color: #f2d200; /* Cor das estrelas */
+}
+
+.star-rating {
+font-size: 0.9rem; /* Tamanho das estrelas */
+color: #f2d200; /* Cor das estrelas */
+}
+
+.nome_nota{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.size{
+    font-size: 50px;
+}
+
+.comentario{
+    margin-left: 70px;
+}
+
+.comentario p:last-child{
+    font-size: 13px;
+}
+
+.link{
+    color: white;
+}
+
+.link:hover{
+    text-decoration: none;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html" class="logo">Bluegreen Eco</a>
+            <div class="nav-links">
+                <a href="index.html"><span class="item ">Home</span></a>
+                <a href="products.html"><span id="scroll" class="item">Produtos</span></a>
+                <a href="about.html"><span id="scroll" class="item">Sobre</span></a>
+            </div>
+            <div class="nav-buttons" id="navMenu">
+                <a href="pfpj.html"><button class="nav-btn selected" >LOGIN</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="visual ">
+            <div class="imagem_texto ">
+                <h1>Ecobag preta: Eu não sou de jogar fora</h1>
+                <p>Outros produtos <a href="" class="link">EcoBrasil</a></p>
+                <div class="imagem">
+                    <img src="imagens_produtos/produtos/roupas_accessorios/ecobag.webp" alt="">
+                </div>
+            </div>
+                <div class="dados ">
+                    <div class="texto">
+                        <p>Vendido por EcoBrasil</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            (5)
+                        </div>
+                        <p>R$ 5.443,33 em até 10x de R$ 544,33 sem juros no cartão de crédito.</p>
+                        <h2>R$ 29,99
+                        </h2>
+                    </div>
+                    <div class="caixa_botao ">
+                        <button class="botao" onclick="window.location.href='pagamento1.html'">Comprar</button>
+                    </div>
+                    <div class="caixa_botao">
+                        <button onclick="window.location.href='carrinho.html'" class="botao">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+        </div>
+        <div class="descricao">
+            <h3 style="color: white;">Informações do produto</h3>
+            <table>
+                <tr>
+                    <th>Descrição geral</th>
+                    <td>Ecobag durável, sustentável e tem uma frase de impacto bem humorada para chamar a atenção para a causa. Com ela você vai poder transportar o que quiser dentro devido a sua versatilidade, e como é facilmente compactável, é perfeita para carregar na bolsa ou bolso e evitar os saquinhos descartáveis. Além disso, a sua alça é larga facilitando o transporte sem machucar os ombros.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Caracteríticas</th>
+                    <td><ul>
+                        <li>Ecobag cor preta em tecido de algodão</li>
+                            <li>Alças em agodão</li>
+                            <li>Bem costurada, leve e versátil</li>
+                    </ul>
+                        </td>
+                </tr>
+                <tr>
+                    <th>Dimensões</th>
+                    <td>Mede 35 x 40 cm
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="notas ">
+            <h3 style="font-size: 25px;">Avaliação dos clientes</h3>
+            <div class="ava ">
+                <div class="classif ">
+                  <div class="parte1 ">
+                    <h4>4.9 <i class="fas fa-star star-rating"></i></h4>
+                    <p>5 avaliações</p>
+                  </div>
+                  <div class="parte2 ">
+                    <p class="">Classificação</p>
+                    <div class="notes ">
+                        <div class="linha">
+                            <div class="label">5 <i class="fas fa-star star-rating"></i></div>
+                            <div class="barra">
+                                <div class="preenchimento_barra" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                
+                        <div class="linha">
+                            <div class="label">4 <i class="fas fa-star star-rating"></i></div>
+                            <div class="barra">
+                                <div class="preenchimento_barra" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                
+                        <div class="linha">
+                            <div class="label">3 <i class="fas fa-star star-rating"></i></div>
+                            <div class="barra">
+                                <div class="preenchimento_barra" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                
+                        <div class="linha">
+                            <div class="label">2 <i class="fas fa-star star-rating"></i></div>
+                            <div class="barra">
+                                <div class="preenchimento_barra" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                
+                        <div class="linha">
+                            <div class="label">1 <i class="fas fa-star star-rating"></i></div>
+                            <div class="barra">
+                                <div class="preenchimento_barra" style="width: 5%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>  
+                </div>
+                <div class="coment ">
+                   <p>3 comentários</p>
+                   <div class="pessoa">
+                    <div class="nome_nota">
+                        <i class="fa-solid fa-circle-user size"></i>
+                        <p>Roberto</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comentario ">
+                        <p>
+                            Gostei muito!
+                        </p>
+                        <p>há 2 anos</p>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Footer -->
+     <div class="footer caixa">
+        <div class="footer-header">
+            Faça do Meio Ambiente o seu Meio de Vida
+        </div>
+        <div class="footer-links">
+            <div class="link">
+                <h5>Loja</h5>
+                <a href="index.html"><p>Home</p></a>
+                <a href="products.html"><p>Produtos</p></a>
+            </div>
+            <div class="link">
+               <h5>Companhia</h5>
+                <a href="about.html"><p>Sobre</p></a>
+            </div>
+            <div class="link">
+                <h5>Contato</h5>
+                <a href="contato.html"><p>Fomulário</p></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright caixa">
+        <p>Copyright 2024, Bluegreen Eco.</p>
+    </div>
+    </body>
+    </html>

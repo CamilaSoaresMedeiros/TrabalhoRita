@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <title>carrinho</title>
+    <link rel="stylesheet" href="header_footer.css">
+    <style>
+
+    #carrinho{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: calc(100vh - 431);
+    padding: 0 88px;
+    margin: 40px 0px;
+    margin-bottom: 100px;
+}
+
+#carrinho::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 55%;
+    top: 90%;
+    background-color: #05de3f;
+    filter: blur(90px);
+}
+
+#carrinho::after{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 5%;
+    top: 15%;
+    background-color: #3b82f6;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+h1{
+    font-weight: 200;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.produto{
+    min-width: 800px;
+    width: 900px;
+    height: 100px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagem{
+    width: 80px;
+    height: 80px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imagem img{
+    max-width: 80%;
+    height: 80%;
+    border-radius: 50px;
+}
+
+.infor{
+    width: 400px;
+}
+
+.infor p{
+    font-weight: 600;
+}
+
+.infor span{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.infor span a{
+    text-decoration: none;
+    color: #3b82f6;
+}
+
+.infor span a:hover{
+    text-decoration: underline;
+}
+
+.quant_js{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.quant_js .button {
+    background-color: transparent;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.quant_js .quantity {
+    font-size: 1em;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+}
+
+
+.resumo_compra{
+    display: flex;
+    align-items: center;
+}
+
+
+.resumo_compra > div{
+    width: 350px;
+    height: 250px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+.resumo{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+
+.resumo_compra .texto{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.botao{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #3b82f6;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">Bluegreen Eco</a>
+            <div class="nav-links">
+                <a href="index.html"><span class="item">Home</span></a>
+                <a href="products.html"><span class="item">Produtos</span></a>
+                <a href="about.html"><span class="item">Sobre</span></a>
+            </div>
+            <div class="nav-buttons" id="navMenu">
+                <a href="pfpj.html"><button class="nav-btn selected" >LOGIN</button></a>
+            </div>
+        </nav>
+        </div>
+            <!-- <button class="toggler">
+                <i class='bx bx-menu'></i>
+            </button> -->
+        </div>
+            <div id="carrinho" class="slide-in-fwd-center">
+                <div class="produtos">
+                    <h1>Produtos</h1>
+                    <div class="produto efeito">
+                        <div class="imagem">
+                            <img src="imagens_produtos/produtos/binquedo/boneca.webp" alt="">
+                        </div>
+                            <div class="infor">
+                                <p> Pelúcia Gloveleya Original Spring Girl Clássica Azul 40cm sustentável</p>
+                                <span><a href="">Excluir</a></span>
+                            </div>
+                            <div class="quant_js">
+                                    <button class="button" onclick="decrease()">-</button>
+                                    <span class="quantity" id="quantity">1</span>
+                                    <button class="button" onclick="increase()">+</button>
+                            </div>
+                        <span class="valor"> R$125,99</span>
+                    </div>
+                    <div class="produto efeito">
+                        <div class="imagem">
+                            <img src="imagens_produtos/produtos/higiene_beleza/escova-de-bambu-natural-organico-etjjzi2zoj.jfif" alt="">
+                        </div>
+                            <div class="infor">
+                                <p>  Escova Dental Bambu Organico Natural</p>
+                                <span><a href="">Excluir</a></span>
+                            </div>
+                            <div class="quant_js">
+                                    <button class="button" onclick="decrease()">-</button>
+                                    <span class="quantity" id="quantity">1</span>
+                                    <button class="button" onclick="increase()">+</button>
+                            </div>
+                        <span class="valor"> R$ 18,99</span>
+                    </div>
+                    <div class="produto efeito">
+                        <div class="imagem">
+                            <img src="imagens_produtos/produtos/roupas_accessorios/camisa_2.webp" alt="">
+                        </div>
+                            <div class="infor">
+                                <p>   Camiseta Ecológica Salve as Abelhas (gola v)</p>
+                                <span><a href="">Excluir</a></span>
+                            </div>
+                            <div class="quant_js">
+                                    <button class="button" onclick="decrease()">-</button>
+                                    <span class="quantity" id="quantity">1</span>
+                                    <button class="button" onclick="increase()">+</button>
+                            </div>
+                        <span class="valor"> R$ 99,99</span>
+                    </div>
+                </div>
+                <div class="resumo_compra ">
+                <div class="resumo_compra ">
+                    <div class="efeito">
+                            <h3 class="resumo ">Resumo da compra</h3>
+                            <div class="texto">
+                                <p >Produtos(3)</p>
+                                <p>R$ 244,97</p>
+                            </div>
+                            <a href="pagamento1.html" class="link">
+                                <div class="botao">
+                                    Continuar
+                                                        </div>
+                            </a>
+                        
+                </div>
+            </div>   
+                </div>
+    </div>
+     <!-- Footer -->
+     <div class="footer caixa">
+        <div class="footer-header">
+            Faça do Meio Ambiente o seu Meio de Vida
+        </div>
+        <div class="footer-links">
+            <div class="link">
+                <h5>Loja</h5>
+                <a href="index.html"><p>Home</p></a>
+                <a href="products.html"><p>Produtos</p></a>
+            </div>
+            <div class="link">
+               <h5>Companhia</h5>
+                <a href="about.html"><p>Sobre</p></a>
+            </div>
+            <div class="link">
+                <h5>Contato</h5>
+                <a href=""><p>Número</p></a>
+                <a href=""><p>Email</p></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright caixa">
+        <p>Copyright 2024, Bluegreen Eco.</p>
+    </div>
+
+
+    <script>
+        let quantity = 1;
+        
+        function increase() {
+          quantity++;
+          document.getElementById('quantity').textContent = quantity;
+        }
+        
+        function decrease() {
+          if (quantity > 1) {
+            quantity--;
+            document.getElementById('quantity').textContent = quantity;
+          }
+        }
+      </script>
+</body>
+</html>

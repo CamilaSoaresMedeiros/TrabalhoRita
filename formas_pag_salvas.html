@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de pagamento salvas</title>
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <style>
+        .content{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0 88px;
+}
+
+
+
+.pag{
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    margin-left: 10%;
+    row-gap: 5%;
+}
+
+
+.pag > div{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.infor{
+    display: flex;
+    padding-left: 40px;
+    column-gap: 20px;
+}
+
+.imagem{
+    max-width: 200px;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img{
+    width: 60%;
+    height: auto;
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+strong{
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.editar img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html" class="logo">Bluegreen Eco</a>
+            <div class="nav-links">
+                <a href="index.html"><span class="item">Home</span></a>
+                <a href="products.html"><span id="scroll" class="item">Produtos</span></a>
+                <a href="about.html"><span id="scroll" class="item">Sobre</span></a>
+            </div>
+            <div class="nav-buttons" id="navMenu">
+                <a href=""><i class="fa-solid fa-circle-user sizeee sele"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="content">
+            <div class="nav">
+                <h1>Minha conta</h1>
+                    <a href="perfil_client.html" class="one">
+                        <div class="item">
+                            <i class="fa-solid fa-circle-user size"></i>
+                            <h3>Meu perfil</h3>
+                        </div>
+                    </a>
+                    <a href="historico.html">
+                        <div class="item">
+                            <i class="fa-solid fa-bag-shopping size"></i>
+                            <h3>Histórico de compras</h3>
+                        </div>
+                    </a>
+                    <a href="formas_pag_salvas.html">
+                        <div class="item selecao">
+                            <i class="fa-solid fa-pager size selected"></i>
+                            <h3>Métodos de pagamento</h3>
+                                        </div>
+                    </a>
+            </div>
+
+            <div class="pag slide-in-fwd-center">
+                <h2>Seus métodos de pagamento</h2>
+                <div class="efeito">
+                    <div class="infor">
+                        <div class="imagem">
+                            <img src="martercard.png" alt="">
+                        </div>
+                        <div class="detalhes">
+                            <p><strong>Titular:</strong>  Anton R. Dada</p>
+                            <p><strong>Número:</strong>  4111 1111 1111 1111</p>
+                            <p><strong>Validade:</strong> 12/28</p>
+                            <p><strong>CVV:</strong> 123</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-pen-to-square sizee"></i>
+                </div>
+
+                <div class="efeito">
+                    <div class="infor">
+                        <div class="imagem">
+                            <img src="pix.png" alt="">
+                        </div>
+                        <div class="detalhes ">
+                            <p><strong>Chave pix:</strong>123.456.789-09</p>
+                        </div>
+                        
+                    </div>
+                    <i class="fa-solid fa-pen-to-square sizee"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Footer -->
+     <div class="footer caixa">
+        <div class="footer-header">
+            Faça do Meio Ambiente o seu Meio de Vida
+        </div>
+        <div class="footer-links">
+            <div class="link">
+                <h5>Loja</h5>
+                <a href="index.html"><p>Home</p></a>
+                <a href="products.html"><p>Produtos</p></a>
+            </div>
+            <div class="link">
+               <h5>Companhia</h5>
+                <a href="about.html"><p>Sobre</p></a>
+            </div>
+            <div class="link">
+                <h5>Contato</h5>
+                <a href="contato.html"><p>Fomulário</p></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright caixa">
+        <p>Copyright 2024, Bluegreen Eco.</p>
+    </div>
+</body>
+</html>

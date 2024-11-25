@@ -1,0 +1,85 @@
+
+
+.content{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 88px;
+    flex-wrap: wrap;
+}
+
+
+
+
+    .size1{
+        font-size: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .center{
+        display: flex;
+        align-items: center;
+        margin: 0px 20px;
+    }
+    
+    .sele{
+        border-bottom: 5px solid#05de3f;
+        padding-bottom: 2px;
+        transition: 0.5s;
+    }
+    
+    .sele:hover{
+        border-bottom: none;
+    }
+    
+
+
+.caixa_perfil{
+    flex: 60%;
+    display: flex;
+}
+
+.caixa_perfil > div{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.caixa_perfil > div.empresa{
+    height: 400px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    font-weight: 300;
+    
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.email{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+strong{
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+
+.editar img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}

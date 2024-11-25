@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <a href="index.html"><div class="logo">Bluegreen Eco</div></a>
+
+    <div class="wrapper">
+        <span class="bg-animate"></span>
+        <span class="bg-animate2"></span>
+
+        <div class="form-box login">
+            <h2 class="animation" style="--i:0; --j:21" >Login</h2>
+        <form action="#">
+            <div class="input-box animation" style="--i:1; --j:22">
+                <input type="text" required>
+                <label>E-mail</label>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box animation" style="--i:2; --j:23">
+                <input type="password" required>
+                <label>Senha</label>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn animation"  style="--i:3; --j:24" onclick="window.location.href='perfil_client.html'">Login
+            </button>
+        <div class="logreg-link animation" style="--i:4; --j:24">
+            <p>Não possui conta? <a href="#" class="register-link">Cadastre-se</a></p>
+       </div> 
+    </form>
+    </div>
+     <div class="info-text login"><h2 class="animation" style="--i:0; --j:25">Bem-vindo novamente!</h2>
+    </div>
+      
+    <div class="form-box register">
+        <h2 class="animation"  style="--i:17; --j:0">Cadastre-se</h2>
+    <form action="#" id="dois">
+        <div class="input-box animation"  style="--i:18; --j:1">
+            <input type="number" required>
+            <label>CPF:</label>
+            <i class='bx bx-id-card'></i>
+        </div>
+        <div class="input-box animation"  style="--i:19; --j:2">
+            <input type="text" required>
+            <label>Nome completo:</label>
+            <i class='bx bxs-rename' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:20; --j:3">
+            <input type="date" required>
+            <label>Data de nascimento:</label>
+            <i class='bx bxs-cake' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:21; --j:4">
+            <input type="text" required>
+            <label>E-mail:</label>
+            <i class='bx bxs-envelope' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:21; --j:4">
+            <input type="password" required>
+            <label>Senha: (Mínimo 6 dígitos)</label>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="input-box animation"  style="--i:22; --j:5">
+            <input type="number" required>
+            <label>CEP:</label>
+            <i class='bx bx-current-location' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:23; --j:6">
+            <input type="text" required>
+            <label>Endereço:</label>
+            <i class='bx bx-current-location' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:24; --j:7">
+            <input type="number" required>
+            <label>Número:</label>
+            <i class='bx bx-current-location' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:25; --j:8">
+            <input type="text" required>
+            <label>Complemento:</label>
+            <i class='bx bx-current-location' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:26; --j:9">
+            <input type="text" required>
+            <label>Bairro:</label>
+            <i class='bx bx-current-location' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:27; --j:10">
+            <input type="text" required>
+            <label>Cidade:</label>
+            <i class='bx bx-current-location' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:28; --j:11">
+            <input type="text" required>
+            <label>Estado:</label>
+            <i class='bx bx-current-location' ></i>
+        </div>
+        <div class="input-box animation"  style="--i:29; --j:12">
+            <input type="number" required>
+            <label>Telefone:</label>
+            <i class='bx bxs-phone' ></i>
+        </div>
+        <button type="submit" class="btn animation"  style="--i:30; --j:13" onclick="window.location.href='perfil_client.html'">Entre
+        </button>
+    <div class="logreg-link animation"  style="--i:31; --j:14">
+        <p>Já possui uma conta?  <a href="#" class="login-link">Login</a></p>
+   </div> 
+</form>
+</div>
+<div class="info-text register"><h2 class="animation"  style="--i:17; --j:0">Bem-vindo!</h2>
+    <p class="animation"  style="--i:18; --j:1">Esperamos que goste de nosso sistema e aproveite as promoções para ajudar o planeta!</p>
+    </div>
+    </div>
+
+   <script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+
+        .container::after{
+                content: "";
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                left: 0%;
+                top:90%;
+                background-color: #22a8cd;
+                filter: blur(200px);
+                z-index: -1000;
+            }
+    
+        .container{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 100vh;
+    padding: 0 88px;
+    flex-wrap: wrap;
+}
+
+.parte1{
+    display: flex;
+    flex-direction: column;
+}
+
+h2,h3{
+    font-weight: 300;
+    margin: 80px 0px;
+    margin-top: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#menor{
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.tit{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(227, 227, 227);
+}
+
+.icon_tam{
+    font-size: 50px;
+}
+
+.icone img{
+    width: 50px;
+}
+
+.produtofinal{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    border-radius: 15px;
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.clas{
+    border-bottom: 1px solid rgb(215, 215, 215);
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.infor{
+    display: flex;
+    padding-left: 40px;
+    column-gap: 20px;
+}
+
+.imagem img{
+    width: 80px;
+    border-radius: 50px;
+    border: 7px solid #22a8cd;
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: column;
+}
+
+.detalhes p, .letramenor{
+    font-size: 14px;
+}
+
+.box{
+    padding: 20px 10px;
+    width: 500px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 20px;
+    padding-left: 40px;
+    z-index: 1000;
+}
+
+.caixa_botao{
+    display: flex;
+}
+
+.botao{
+    background-color: #05de3f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.botao:hover{
+    background-color: #05b534;
+    color: white;
+}
+
+.resdacompra{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 40px;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.prodrc, .pagararc,  .freterc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodrc, .freterc{
+    padding-bottom: 20px;
+}
+
+.pagararc, .freterc{
+    border-top: 1px solid rgb(217, 217, 217);
+    padding-top: 20px;
+}
+    </style>
+    <title>Pagamento</title>
+</head>
+<body>
+    <div class="caixa">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html" class="logo">Bluegreen Eco</a>
+        </div>
+    </div>
+
+
+        <div class="container">
+            <div class="parte1 ">
+                <h2 id="menor">Revise e confirme sua compra</h2>
+                <p class="tit">Detalhe do envio</p>
+                <div class="box efeito">
+                    <div class="icone">
+                        <i class="fa-solid fa-house icon_tam"></i>
+                    </div>
+                    <div class="info">
+                       <p>Travessa Júlio Verne, 58 - Rio de Janeiro</p>
+                        <p class="letramenor">Rio de Janeiro, Rio de Janeiro - CEP 59458210</p>
+                    </div>
+                </div>
+                <div class="produtofinal efeito">
+                        <div class="clas">
+                            Produto
+                        </div>
+                        <div class="infor">
+                            <div class="imagem">
+                                <img src="imagens_produtos/produtos/utensilios/kit_de_capsulas_de_cafe_reutilizavel_nespresso_1641_1_2f7885fced5a8cfe1c64ac91111a58c8_20230310111800.webp" alt="">
+                            </div>
+                            <div class="detalhes">
+                                <p>Cápsula de café reutilizável de icafilas krups inissia, para nespresso delonlonghi 203549
+                                    recarga de café filtro de café de aço inoxidável</p>
+                                <p>Quantidade: 1</p>
+                            </div>
+                        </div>
+                </div>
+                <p class="tit">Detalhes do pagamento</p>
+                <div class="box efeito">
+                    <div class="icone">
+                        <img src="pix.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Pix</p>
+                        <p class="letramenor">Você pagará R$69,75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resdacompra efeito">
+                <h3>Resumo da compra</h3>
+                <div class="prodrc">
+                    <p>Produto</p>
+                    <p>R$59,75</p>
+                </div>
+                <div class="freterc">
+                    <p>Frete</p>
+                    <p>    R$10,00</p>
+                </div>
+                <div class="pagararc">
+                    <p>Você pagará</p>
+                    <p>R$69,75</p>
+                </div>
+                <div class="caixa_botao"><button class="botao">CONFIRMAR A COMPRA</button>
+            </div>
+        </div>
+        </div>
+
+
+     <!-- Footer -->
+     <div class="footer caixa">
+        <div class="footer-header">
+            Faça do Meio Ambiente o seu Meio de Vida
+        </div>
+        <div class="footer-links">
+            <div class="link">
+                <h5>Loja</h5>
+                <a href="index.html"><p>Home</p></a>
+                <a href="products.html"><p>Produtos</p></a>
+            </div>
+            <div class="link">
+               <h5>Companhia</h5>
+                <a href="about.html"><p>Sobre</p></a>
+            </div>
+            <div class="link">
+                <h5>Contato</h5>
+                <a href="contato.html"><p>Fomulário</p></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright caixa">
+        <p>Copyright 2024, Bluegreen Eco.</p>
+    </div>
+</body>
+</html>

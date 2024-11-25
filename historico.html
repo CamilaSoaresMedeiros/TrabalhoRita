@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de compras</title>
+    <link rel="shortcut icon" href="bluegreenlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .content{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0 88px;
+}
+
+
+
+h3{
+    font-weight: 400;
+}
+
+
+
+
+
+.compras{
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    margin-left: 10%;
+    row-gap: 5%;
+}
+
+
+.compras > div{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    row-gap: 30px;
+}
+
+.data{
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.infor{
+    display: flex;
+    padding-left: 40px;
+    column-gap: 20px;
+}
+
+.imagem{
+    width: 80px;
+    height: 80px;
+    background-color: #22a8cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.imagem img{
+    max-width: 80%;
+    height: 80%;
+    border-radius: 50px;
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: column;
+}
+
+.detalhes p:nth-child(1){
+    color: #038926;
+    font-weight: 600;
+}
+
+
+.detalhes p:nth-child(2){
+    font-weight: 600;
+}
+
+.detalhes p:nth-child(3), .detalhes p:nth-child(4){
+    font-size: 13px;
+    width: 500px;
+}
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html" class="logo">Bluegreen Eco</a>
+            <div class="nav-links">
+                <a href="index.html"><span class="item">Home</span></a>
+                <a href="products.html"><span id="scroll" class="item">Produtos</span></a>
+                <a href="about.html"><span id="scroll" class="item">Sobre</span></a>
+            </div>
+            <div class="nav-buttons" id="navMenu">
+                <a href=""><i class="fa-solid fa-circle-user sizeee sele"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="content">
+            <div class="nav">
+                <h1>Minha conta</h1>
+                    <a href="perfil_client.html"  class="one">
+                        <div class="item">
+                            <i class="fa-solid fa-circle-user size"></i>
+                            <h3>Meu perfil</h3>
+                        </div>
+                    </a>
+                    <a href="historico.html">
+                        <div class="item selecao">
+                            <i class="fa-solid fa-bag-shopping size selected"></i>
+                            <h3>Histórico de compras</h3>
+                        </div>
+                    </a>
+                    <a href="formas_pag_salvas.html">
+                        <div class="item">
+                            <i class="fa-solid fa-pager size "></i>
+                            <h3>Métodos de pagamento</h3>
+                                        </div>
+                    </a>
+            </div>
+
+            <div class="compras slide-in-fwd-center">
+                <h2>Compras</h2>
+                <div class="compra efeito">
+                    <div class="data">
+                        17 de outubro
+                    </div>
+                    <div class="infor">
+                        <div class="imagem">
+                            <img src="imagens_produtos/produtos/roupas_accessorios/camisa_2.webp" alt="">
+                        </div>
+                        <div class="detalhes">
+                            <p>Entregue</p>
+                            <p>Chegou dia 23 de outubro</p>
+                            <p>Camiseta Ecológica Salve as Abelhas (gola v)</p>
+                            <p>Quantidade: 2</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="compra efeito">
+                        <div class="data">
+                            17 de outubro
+                        </div>
+                        <div class="infor">
+                            <div class="imagem">
+                                <img src="imagens_produtos/produtos/utensilios/kit_de_capsulas_de_cafe_reutilizavel_nespresso_1641_1_2f7885fced5a8cfe1c64ac91111a58c8_20230310111800.webp" alt="">
+                            </div>
+                            <div class="detalhes">
+                                <p>Entregue</p>
+                                <p>Chegou dia 23 de outubro</p>
+                                <p>Cápsula de café reutilizável de icafilas krups inissia, para nespresso delonlonghi 203549
+                                    recarga de café filtro de café de aço inoxidável</p>
+                                <p>Quantidade: 1</p>
+                            </div>
+                        </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Footer -->
+     <div class="footer caixa">
+        <div class="footer-header">
+            Faça do Meio Ambiente o seu Meio de Vida
+        </div>
+        <div class="footer-links">
+            <div class="link">
+                <h5>Loja</h5>
+                <a href="index.html"><p>Home</p></a>
+                <a href="products.html"><p>Produtos</p></a>
+            </div>
+            <div class="link">
+               <h5>Companhia</h5>
+                <a href="about.html"><p>Sobre</p></a>
+            </div>
+            <div class="link">
+                <h5>Contato</h5>
+                <a href="contato.html"><p>Fomulário</p></a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright caixa">
+        <p>Copyright 2024, Bluegreen Eco.</p>
+    </div>
+
+</body>
+</html>
